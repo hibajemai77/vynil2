@@ -7,8 +7,13 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "doctrine/doctrine-bundle": "^2.11",
+        "doctrine/doctrine-migrations-bundle": "^3.3",
+        "doctrine/orm": "^2.17",
         "knplabs/knp-time-bundle": "^2.2",
         "paragonie/sodium_compat": "^1.20",
+        "sensio/framework-extra-bundle": "^6.2",
+        "stof/doctrine-extensions-bundle": "^1.9",
         "symfony/asset": "6.3.*",
         "symfony/console": "6.3.*",
         "symfony/dotenv": "6.3.*",
@@ -69,8 +74,9 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "6.3.*"
+            "allow-contrib": true,
+            "require": "6.3.*",
+            "docker": true
         }
     },
     "require-dev": {
